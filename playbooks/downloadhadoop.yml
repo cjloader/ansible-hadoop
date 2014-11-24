@@ -10,6 +10,6 @@
    - name: install java
      apt: name=default-jdk update_cache=yes
    - name: Download Hadoop
-     commmand: wget http://mirror.reverse.net/pub/apache/hadoop/common/hadoop-2.5.2/hadoop-2.5.2-src.tar.gz
+     command: wget http://mirror.reverse.net/pub/apache/hadoop/common/hadoop-2.5.2/hadoop-2.5.2-src.tar.gz
    - name: Unzip Hadoop
      command: tar -xfvz hadoop-2.5.2-src.tar.gz hadoop-2.5.2
