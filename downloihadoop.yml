@@ -1,0 +1,15 @@
+---
+- name: Download Hadoop on servers
+  hosts: servers
+  sudo: true
+  vars:
+  remote_user: root
+  tasks:
+   - name: configure machine for Hadoop
+     apt: name=build-essential update_cache=yes
+   - name: install java
+     apt: name=default-jdk update_cache=yes
+   - name: Download Hadoop
+     commmand: wget http://mirror.reverse.net/pub/apache/hadoop/common/hadoop-2.5.2/hadoop-2.5.2-src.tar.gz
+   - name: Unzip Hadoop
+     command: tar -xfvz hadoop-2.5.2-src.tar.gz hadoop-2.5.2
