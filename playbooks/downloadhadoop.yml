@@ -1,6 +1,6 @@
 ---
 - name: Download Hadoop on servers
-  hosts: servers
+  hosts: slaves
   sudo: true
   vars:
   remote_user: root
