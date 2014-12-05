@@ -6,5 +6,5 @@ Installation of Hadoop using Ansible
 
 
 Work to come:
--Configure/Setup files
-    Optional: Install additional modules on top of Hadoop.
+- Configure/Setup files
+   - Optional: Install additional modules on top of Hadoop.
